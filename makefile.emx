@@ -1,0 +1,21 @@
+# OS2TERM makefile for emx
+
+CC=gcc
+LD=gcc
+CFLAGS=-Zomf -Zsys -O2 -s -funsigned-char -finline-functions
+LDFLAGS=-Zomf -Zsys -s
+OBJEXT=obj
+OBJS=os2term.$(OBJEXT)
+LIBS=
+DEF_FILE=os2term.def
+
+.SUFFIXES: .c .$(OBJEXT)
+
+default:	os2term.exe
+
+.c.$(OBJEXT):
+	$(CC) $(CFLAGS) -c $<
+
+os2term.exe:	$(OBJS)
+	$(LD) $(LDFLAGS) -o os2term.exe $(OBJS) $(DEF_FILE) $(LIBS)
+

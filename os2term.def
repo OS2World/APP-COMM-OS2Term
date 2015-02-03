@@ -1,0 +1,3 @@
+NAME os2term NOTWINDOWCOMPAT NEWFILES
+DESCRIPTION 'Copyright 1993 by Jeff Garzik - OS/2 2.x 32-bit serial example'
+STACKSIZE 0x50000

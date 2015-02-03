@@ -1,0 +1,30 @@
+			     OS2TERM v1.00
+		    Copyright 1993 by Jeff M. Garzik
+
+
+OS2TERM is pretty simple and straightforward.  It arose out of my need
+for decent 32-bit source code for dealing with modems.	This should
+provide the OS/2 serial programmer with a decent head start.
+
+The program itself was written using ONLY OS/2 system calls (no C
+runtime library calls whatsoever), so I am pretty sure it will compile
+on any OS/2 2.x C compiler.
+
+The executable contained in this package was compiled with
+emx/gcc 0.8g, but it does not require the EMX DLLs.  A makefile for emx
+users (using GNU make) is provided.
+
+Make sure you compile the source with the 'char' type defaulting to
+'unsigned' to avoid a couple warnings.
+
+I can be reached at jgarzik@pantera.atl.ga.us if you have any questions.
+
+PSST.  Have you read the OS/2 Programming FAQ?
+
+DISCLAIMER OF WARRANTIES.  The following documentation and accompanying
+files (hereafter known as the 'package') were created by Jeff M. Garzik.
+This package is provided "AS IS", without warranty of any kind.
+Jeff M. Garzik shall not be liable for any damages arising out of your
+use of the any part of the package, even if he has been advised of the
+possibility of such damages.
+
